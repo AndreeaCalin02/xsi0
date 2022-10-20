@@ -1,0 +1,65 @@
+	/* Styles for tags */
+    body {
+        background-color: #251B37;
+		text-align: center;
+    }
+
+	h1 {
+		color: #B1AFFF;;
+		font-size: 62px;
+		margin: 20px auto 10px;
+	}
+
+	form {
+		margin-top: 50px;
+		color: white;
+	}
+
+	/* Boxes */
+	.boxes input {
+        background-color: #B8E8FC;
+		width: 100px;
+		height: 100px;
+		margin: auto;
+        border: 5px solid;
+		border-radius: 10px;
+		font-size: 50px;
+		text-align: center;
+        color: gray;
+	}
+
+	/* Style for classes */
+	.button {
+		box-sizing: border-box;
+		border: 0px solid;
+		margin: auto;
+		border-radius: 5px;
+		font-family: Verdana,
+			Geneva, Tahoma, sans-serif;
+		background-color: #B1AFFF;
+		color: white;
+		font-size: 25px;
+		cursor: pointer;
+		padding: 10px 20px;
+		margin: 30px auto 0;
+	}
+
+	.hidden {
+		display: none;
+	}
+
+	.yellow {
+		color: #251B37;
+		font-size: 25px;
+		background-color: #FDFF00;
+		margin: 10px 30px;
+	}
+		/* Style for IDs */
+		/* Player turn space */
+		#print {
+			font-family: Verdana,
+				Geneva, Tahoma, sans-serif;
+			color: white;
+			font-size: 42px;
+			margin: 10px auto 20px;
+		}

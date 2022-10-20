@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tic Tac Toe</title>
+	<!-- CSS file-->
+	<link rel="stylesheet"type="text/css" href="proiect.css">
+</head>
+
+<body >
+	<header>
+		<h1>Tic Tac Toe</h1>
+	</header>
+
+	<main>
+		<!-- Input Area -->
+		<div class="inputUser">
+            <!-- button Single Player -->
+			<button class="button single-player" onclick="singlePlayerInput()">
+				Single-Player
+			</button>
+			<div class="single-player-input hidden" >
+				<button id="playerX" class="button yellow" onclick="clickX()"> X </button>
+				<button id = "player0" class="button yellow" onclick="click0()"> 0 </button><br>
+				<button class="button" onclick="startGame()">Start</button>
+			</div>
+
+			<br>
+			<!-- Button multiplayer -->
+			<button class="button multi-player" onclick="multiPlayerInput()">
+				Multi-Player
+			</button>
+			<div class="multi-player-input hidden">
+				<form>
+					<h3>Player 1</h3>
+					<label for="player1-name">Name:</label>
+					<input type="text" id="player1-name"><br><br>
+					<input type="checkbox" id="playerXmulti" onclick="multiplayerX()">
+					<label for="playerXmulti"> X</label>
+					<input type="checkbox" id="player0multi" onclick="multiplayer0()">
+					<label for="player0multi"> 0</label><br>
+					<h3>Player 2</h3>
+					<label for="player2-name">Name:</label>
+					<input type="text" id="player2-name"><br><br>
+				</form>
+				<button class="button" 
+				onclick="startMultiplayerGame()">
+					Start
+				</button>
+			</div>
+			<!-- Button Go to Home -->
+			<button class="button go-home hidden" onclick="goHome()"> Back to Home</button>
+        </div>
+
+	<!-- Game Area -->
+		<div class="game hidden">
+			<!-- Space to show player turn -->
+			<h2 id="print">Click a box to start!</h2>
+
+			<!-- 3*3 grid of Boxes -->
+			<div class="boxes">
+				<form action="">
+				<input type="text" id="b1" onclick='' readonly>
+
+				<input type="text" id="b2" onclick='' readonly>
+
+				<input type="text" id="b3" onclick='' readonly>
+				<br><br>
+
+				<input type="text" id="b4" onclick='' readonly>
+					
+				<input type="text" id="b5" onclick='' readonly>
+
+				<input type="text" id="b6" onclick='' readonly>
+				<br><br>
+
+				<input type="text" id="b7" onclick='' readonly>
+
+				<input type="text" id="b8" onclick='' readonly>
+
+				<input type="text" id="b9" onclick='' readonly>
+				</form>
+			</div>
+			<!-- Grid end here -->
+
+			<!-- Button to reset game -->
+			<button class="button" onclick="restart()">
+				Restart
+			</button>
+			<br>
+			<!-- Button Go to Home -->
+			<button class="button" onclick="goHome()">Back to Home</button>
+		</div>
+	</main>
+
+    	<!-- JavaScript file -->
+	<script src="proiect.js"></script>
+</body>
+
+</html>
